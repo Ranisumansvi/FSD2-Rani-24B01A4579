@@ -1,0 +1,21 @@
+{
+  "name": "fsd2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ranisumansvi/FSD2-Rani-24B01A4579.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Ranisumansvi/FSD2-Rani-24B01A4579/issues"
+  },
+  "homepage": "https://github.com/Ranisumansvi/FSD2-Rani-24B01A4579#readme"
+}
