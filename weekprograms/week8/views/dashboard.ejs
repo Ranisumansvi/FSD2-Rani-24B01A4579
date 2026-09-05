@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Library Dashboard</title>
+</head>
+
+<body>
+
+    <h1>Welcome to Library Dashboard, <%= user %>!</h1>
+
+    <p>
+        <strong>Session Info:</strong>
+        You are logged in using Express Session.
+    </p>
+
+
+    <p>
+        <strong>Last Login:</strong>
+        <%= lastLogin %>
+    </p>
+
+
+    <p>
+        <strong>Cookie Data:</strong>
+        Custom lastLogin cookie is being read.
+    </p>
+
+
+    <hr>
+
+
+    <h3>Library Services</h3>
+
+    <ul>
+        <li>Manage Books</li>
+        <li>View Members</li>
+        <li>Issue Books</li>
+        <li>Return Books</li>
+    </ul>
+
+
+    <br>
+
+    <a href="/logout">Logout</a>
+
+</body>
+
+</html>
