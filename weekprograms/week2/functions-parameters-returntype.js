@@ -1,0 +1,37 @@
+"use strict";
+// Function with Parameters and Explicit Return Type
+function calculateFuel(distance, fuelPerKm) {
+    return distance * fuelPerKm;
+}
+let totalFuel = calculateFuel(120, 3);
+console.log("Total Fuel Required:", totalFuel, "litres");
+// Function with Default Parameters
+function launchMission(missionName, planet = "Mars") {
+    return `Mission ${missionName} is launching to ${planet}.`;
+}
+console.log(launchMission("Explorer-1"));
+console.log(launchMission("Galaxy-X", "Jupiter"));
+//// Function with Optional Parameters
+function astronautProfile(name, specialization) {
+    if (specialization) {
+        return `${name} is a ${specialization} astronaut.`;
+    }
+    return `${name} is an astronaut.`;
+}
+console.log(astronautProfile("eun woo"));
+console.log(astronautProfile("si eun", "Pilot"));
+//// Function with Rest Parameters
+function collectSamples(...samples) {
+    console.log("Collected Samples:");
+    for (let sample of samples) {
+        console.log(sample);
+    }
+}
+collectSamples("Moon Rock", "Ice Crystal", "Meteor Dust", "Solar Soil");
+//// Testing the Experiment
+console.log("Fuel Needed:", calculateFuel(150, 4));
+console.log(launchMission("Nova"));
+console.log(launchMission("Star", "Saturn"));
+console.log(astronautProfile("Riya"));
+console.log(astronautProfile("Arjun", "Engineer"));
+collectSamples("Rock", "Gas", "Ice");
