@@ -1,0 +1,15 @@
+$mainColor: green;
+
+.header {
+  background: #e8f5e9;
+  padding: 20px;
+
+  h1 {
+    color: $mainColor;
+  }
+
+  p {
+    color: #555;
+    font-size: 18px;
+  }
+}

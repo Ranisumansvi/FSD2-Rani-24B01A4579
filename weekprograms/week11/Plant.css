@@ -1,0 +1,14 @@
+.plant {
+  background-color: #f1f8e9;
+  border: 1px solid #8bc34a;
+  padding: 15px;
+  margin: 15px 0;
+}
+
+.plant h3 {
+  color: green;
+}
+
+.plant p {
+  font-weight: bold;
+}

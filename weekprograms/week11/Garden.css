@@ -1,0 +1,11 @@
+.garden {
+  border: 2px solid #90a955;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+button {
+  padding: 10px;
+  margin: 5px;
+  cursor: pointer;
+}
