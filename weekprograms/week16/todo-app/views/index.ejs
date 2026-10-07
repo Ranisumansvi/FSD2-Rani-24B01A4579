@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Smart Task Manager</title>
+
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Smart Task Manager</h1>
+        <p>Add and manage your daily tasks</p>
+
+        <!-- Add Task Form -->
+        <form action="/add" method="POST">
+            <input
+                type="text"
+                name="task"
+                placeholder="Enter a new task"
+            >
+
+            <button type="submit">Add Task</button>
+        </form>
+
+        <!-- Task List -->
+        <h2>My Tasks</h2>
+
+        <ul>
+            <% todos.forEach(function(todo, index) { %>
+
+                <li>
+                    <span><%= todo %></span>
+
+                    <a
+                        class="delete"
+                        href="/delete/<%= index %>"
+                    >
+                        Delete
+                    </a>
+                </li>
+
+            <% }) %>
+        </ul>
+
+        <% if (todos.length === 0) { %>
+            <p class="empty">No tasks added yet.</p>
+        <% } %>
+
+    </div>
+
+</body>
+</html>

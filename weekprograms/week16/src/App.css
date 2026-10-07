@@ -1,0 +1,40 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f2f6ff;
+}
+
+.app {
+  width: 500px;
+  margin: 60px auto;
+  text-align: center;
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+}
+
+.quiz {
+  margin-top: 30px;
+}
+
+.options {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+button {
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  background: #eeeeee;
+}
+
+button:hover {
+  background: #dddddd;
+}
+
+p {
+  margin-top: 20px;
+}
